@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#myResponsiveNavBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myResponsiveNavBar">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- sidebar -->
+                    <div class="col-md-4 col-lg-3 col-xl-2 fixed-top sidebarcolor">
+                        <div class="navbar-brand text-uppercase d-block text-center text-dark py-2 mx-auto mb-3 border-bottom">
+                            E-Lawyer
+                        </div>
+                        
+                        <!-- setting profiles -->
+                        <div class="border-bottom pb-3">
+                            <a href="">
+                                <img src="../img/pic1.jpg" width="50" height="50" class="rounded-circle">
+                            </a>
+                            <a href="" class="text-dark text-capitalize ml-3">
+                                admin
+                            </a>
+                        </div>
+
+                        <!-- un orderded list ztu -->
+                        <ul class="navbar-nav flex-column mt-3">
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-dark p-3 mb-2">
+                                    <i class="fas fa-dashboard fa-lg mr-3"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link text-dark p-3 mb-2 dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-registered fa-lg mr-3 active"></i>
+                                    Register
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a th:href="@{/lawyer_reg_form}"  class="dropdown-item">Add Lawyer</a>
+                                    <a  th:href="@{/user_reg_form}" class="dropdown-item">Add Client</a>
+                                    <a th:href="@{/cases_reg_form}" class="dropdown-item">Add Case</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link text-dark p-3 mb-2 dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-registered fa-lg mr-3 active"></i>
+                                    View
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="" class="dropdown-item">Lawyer</a>
+                                    <a  th:href="@{/view_user_form}" class="dropdown-item">Client</a>
+                                    <a th:href="@{/view_cases_form}" class="dropdown-item">Cases</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-dark p-3 mb-2">
+                                    <i class="fas fa-dashboard fa-lg mr-3 active"></i>
+                                    Generate Report
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-dark p-3 mb-2">
+                                    <i class="fas fa-dashboard fa-lg mr-3 active"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link text-dark p-3 mb-2" data-toggle="dropdown">
+                                    <i class="fas fa-dashboard fa-lg mr-3 active"></i>
+                                    <span class="btn btn-danger btn-sm">Logout</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                        <a href="" class="dropdown-item">
+                                            <i class="fas fa-home mr-3"></i>
+                                            Dashboard</a>
+                                        <a href="" class="dropdown-item">
+                                            <i class="fas fa-user mr-3"></i>
+                                            My Account</a>
+                                        <a href="" class="dropdown-item">Sites</a>
+                                        <a href="" class="dropdown-item">My Profile</a>
+                                        <a href="" class="dropdown-item">
+                                            <i class="fas fa-sign-out-alt mr-3"></i>
+                                            Logout</a>
+                                    </div>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                    <!--end of sidebar -->
+
+
+
+
+
+
+                    <!--topbar -->
+                    <div class="col-md-8 col-lg-9 col-xl-10 fixed-top py-2 ml-auto top-navbar">
+                        <div class="row align-items-center ">
+                            <div class="col-md-2  ">
+                                <h4 class="text-light">Logo</h4>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4 class="text-light">Online Lawyer Management System</h4>
+                            </div>
+
+                            <div class="col-md-4 ">
+                                <ul>
+                                    <li>
+                                        <a href="">Home</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">Contact</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of topbar -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <script src="../bootstrap4/js/all.min.js"></script>
+    <script src="../bootstrap4/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap4/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap4/js/popper.min.js"></script>
+</body>
+</html>

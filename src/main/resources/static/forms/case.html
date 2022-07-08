@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Case</title>
+</head>
+    <body>
+        <div class="container mt-5">
+            <form action="tau.php" class="p-3 "  onsubmit="return checkCaseInput()" >
+                <div class="row">
+                    <div class="col md-12">
+                        <h2 class="text-uppercase text-center p-3">Case registration form</h2>
+                        <hr style="color: black;">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <input type="text" placeholder="Case Name" id="csName" name="" class="form-control">
+                                <small>Error</small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Case type" id="csType" name="" class="form-control">
+                                <small>Error</small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Location" id="csLocation" name="" class="form-control">
+                                <small>Error</small>
+                            </div>
+                            
+                            <div class="form-group col-md-12">
+                                <input type="text" placeholder="Case source" id="csSource" name="" class="form-control">
+                                <small>Error</small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="date" placeholder="Creation date" id="csDate" name="" class="form-control">
+                                <small>Error</small>
+                            </div>
+                           
+                            
+                              
+                                    <button class="btn btn-primary ml-5 " id="btnCaseSubmit">Submit</button>
+                                    <button  class="btn btn-primary ml-5 ">Send</button>
+                                    
+                                 
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="js/case_fm_vl.js"></script>
+    </body>
+</html>

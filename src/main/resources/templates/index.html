@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm home-navbar-link navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light text-capitalize" href="">
+            Online Lawyer System
+        </a>
+        <a class="navbar-brand text-light" href="#"></a>
+        <button class="navbar-toggler home-btn-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon home-btn-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light active link-hover" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light link-hover" href="">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light link-hover" href="">Contacts</a>
+                </li>
+                <li class="nav-item">
+<!--                    <a class="nav-link text-light link-hover" th:href="@{/open_login_form}">Login</a>-->
+                    <a class="nav-link text-light link-hover" th:href="@{/dashboard}">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+            <div>
+                <h1 class="text-center text-uppercase mt-4">Welcome to my site</h1>
+
+            </div>
+    <div class="row">
+            <div class="col-md-8">
+                <img src="../img/pic3.jpg" alt="pic" class="mt-5">
+            </div>
+
+        <div class="col-md-4">
+                <div class="card mt-5">
+                    <div class="card-header text-center bg-success">AboutUs</div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid asperiores et
+                        exercitationem expedita inventore, magnam non odit, quis quisquam tenetur ullam
+                        voluptatem voluptates. Asperiores dolore earum expedita temporibus veritatis?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid asperiores et
+                        dolor sit amet, consectetur adipisicing elit. Ad aliquid asperiores et
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="">
+                            <button class="btn btn-block bg-info display-block">More Details</button>
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+
+    </div>
+
+
+
+
+        </div>
+</body>
+</html>

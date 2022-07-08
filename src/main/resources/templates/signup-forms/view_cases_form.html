@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>View Cases Form</title>
+</head>
+<body>
+<div class="container mt-5">
+    <div>
+        <table class="table table-bordered">
+       <thead>
+                <tr class="text-center text-capitalize">
+                    <th>Case Id</th>
+                    <th>Case Name</th>
+                    <th>Case Type</th>
+                    <th>Case Source</th>
+                    <th>Location</th>
+                    <th>Creation Date</th>
+                </tr>
+
+       <tbody>
+        <tr th:each ="cases:${casesList}">
+            <td th:text="${cases.caseID}"></td>
+            <td th:text="${cases.casesName}"></td>
+            <td th:text="${cases.case_type}"></td>
+            <td th:text="${cases.case_souce}"></td>
+            <td th:text="${cases.location}"></td>
+            <td th:text="${cases.creation_date}"></td>
+        </tr>
+        </tbody>
+       </thead>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

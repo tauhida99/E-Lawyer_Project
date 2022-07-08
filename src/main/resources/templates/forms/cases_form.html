@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:input="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/webjars/../css/style.css}">
+
+
+</head>
+<body>
+<div class="container mt-5">
+    <form th:action="@{/save/cases}" th:object="${cases}"  method="post" class="p-3" onsubmit="return checkInput()">
+        <div class="row">
+            <div class="col md-12">
+                <h2 class="text-uppercase text-center p-3">Case registration form</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <input type="text" th:field="*{casesName}" placeholder="Case Name" id="csName" name="" class="form-control">
+                        <small>Error</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text"  th:field="*{case_type}"placeholder="Case type" id="csType" name="" class="form-control">
+                        <small>Error</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" th:field="*{location}"  placeholder="Location" id="csLocation" name="" class="form-control">
+                        <small>Error</small>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <input type="text" th:field="*{case_souce}" placeholder="Case source" id="csSource" name="" class="form-control">
+                        <small>Error</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="date" th:field="*{creation_date}" placeholder="Creation date" id="csDate" name="" class="form-control">
+                        <small>Error</small>
+                    </div>
+
+
+
+                    <button class="btn btn-primary ml-5 " id="btnCaseSubmit" type="submit">Submit</button>
+                    <button  class="btn btn-primary ml-5 ">Send</button>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+</div>
+
+<script src="../js/form_vl.js"></script>
+
+</body>
+</html>
